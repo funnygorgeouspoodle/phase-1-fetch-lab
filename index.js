@@ -4,12 +4,9 @@ function fetchBooks() {
     .then(data => {
       renderBooks(data)
     })
-
 }
-  
-    
- 
 
+//need to return fetch
 function renderBooks(books) {
   const main = document.querySelector('main');
   books.forEach(book => {
@@ -22,6 +19,3 @@ function renderBooks(books) {
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks();
 });
-
-
-//need to return fetch
